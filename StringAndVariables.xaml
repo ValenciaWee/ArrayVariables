@@ -1,0 +1,403 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="StringAndVariables" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="412.666666666667,4172.66666666667" sap2010:WorkflowViewState.IdRef="StringAndVariables_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="23">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="25">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="5 string variables&#xA;StreetName &quot;Hougang,Singapore&quot;&#xA;Firstname &quot;John&quot;&#xA;LastName &quot;Smith&quot;&#xA;BillOne &quot;20&quot;&#xA;BillTwo &quot;80&quot;" DisplayName="Seq- StringAndVariables" sap:VirtualizedContainerService.HintSize="418,4108" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="Hougang,Singapore" Name="StreetName" />
+      <Variable x:TypeArguments="x:String" Default="John" Name="FirstName" />
+      <Variable x:TypeArguments="x:String" Default="Smith" Name="LastName" />
+      <Variable x:TypeArguments="x:String" Default="20" Name="BillOne" />
+      <Variable x:TypeArguments="x:String" Default="80" Name="BillTwo" />
+      <Variable x:TypeArguments="x:String" Name="FullName" />
+      <Variable x:TypeArguments="x:String" Name="ConcatenateOfBill" />
+      <Variable x:TypeArguments="x:String" Name="SumOfBill" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Seq- Number of characters in first name" sap:VirtualizedContainerService.HintSize="376,708.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="FirstNameLength" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage sap2010:Annotation.AnnotationText="Log message dont need to convert answer to string&#xA;display 4 in output " DisplayName="Log Message- number of character in first name" sap:VirtualizedContainerService.HintSize="334,140" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[FirstName.Length]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:LogMessage>
+      <WriteLine sap2010:Annotation.AnnotationText="Using write line must convert answer.To string&#xA;FirstName.Length.ToString&#xA;print 4 in output" DisplayName="Write Line- number of character in first name" sap:VirtualizedContainerService.HintSize="334,141.333333333333" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[FirstName.Length.ToString]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </WriteLine>
+      <Assign sap2010:Annotation.AnnotationText="Assign a string variable for FirstName.Length" DisplayName="Assign- variable for length of FirstName" sap:VirtualizedContainerService.HintSize="334,107.333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[FirstNameLength]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[FirstName.Length.ToString]</InArgument>
+        </Assign.Value>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Assign>
+      <WriteLine sap2010:Annotation.AnnotationText="Print FirstNameLength variable&#xA;Returns 4 in output" DisplayName="Write Line- FirstNameLength" sap:VirtualizedContainerService.HintSize="334,108" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[FirstNameLength]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </WriteLine>
+    </Sequence>
+    <Sequence sap2010:Annotation.AnnotationText="Using index, to find part of variable LastName &quot;Smith&quot;.&#xA;Index start with 0" DisplayName="Seq- Find part of variable" sap:VirtualizedContainerService.HintSize="376,442" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage sap2010:Annotation.AnnotationText="Find index 0 to 2 but not including 2 from &quot;Smith&quot;. &#xA;Prints Sm in output" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,140" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[LastName.Substring(0,2)]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:LogMessage>
+      <WriteLine sap2010:Annotation.AnnotationText="Find index 0 to 2 but not including 2 from &quot;Smith&quot;. &#xA;Prints Sm in output" DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,124.666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[LastName.Substring(0,2)]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </WriteLine>
+    </Sequence>
+    <Sequence DisplayName="Seq- Extract characters from variable" sap:VirtualizedContainerService.HintSize="376,498" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="Initials" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap2010:Annotation.AnnotationText="create variable initials&#xA;extract first character from each variable" DisplayName="Assign- Initials" sap:VirtualizedContainerService.HintSize="334,107.333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[Initials]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[FirstName(0) + LastName(0)]</InArgument>
+        </Assign.Value>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Assign>
+      <ui:LogMessage sap2010:Annotation.AnnotationText="return JS in output" DisplayName="Log Message- Print Variable Initials" sap:VirtualizedContainerService.HintSize="334,125.333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[Initials]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:LogMessage>
+      <WriteLine sap2010:Annotation.AnnotationText="Return JS n output" DisplayName="Write Line- Print variable initials" sap:VirtualizedContainerService.HintSize="334,93.3333333333333" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[&quot;John Smith's initials is: &quot;+ Initials]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </WriteLine>
+    </Sequence>
+    <Sequence DisplayName="Seq- Check for a character in a string" sap:VirtualizedContainerService.HintSize="376,430" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage sap2010:Annotation.AnnotationText="check if variable FirstName &quot;John&quot; contains &quot;k&quot; .&#xA;returns a boolean result False" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,140" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[FirstName.Contains(&quot;k&quot;)]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:LogMessage>
+      <WriteLine sap2010:Annotation.AnnotationText="check if variable FirstName &quot;John&quot; contains &quot;k&quot; .&#xA;returns a boolean result False&#xA;need to convert boonlean result .ToString" DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[FirstName.Contains(&quot;k&quot;).ToString]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </WriteLine>
+    </Sequence>
+    <Sequence DisplayName="Seq- Concatenate" sap:VirtualizedContainerService.HintSize="376,498" sap2010:WorkflowViewState.IdRef="Sequence_6">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap2010:Annotation.AnnotationText="Create new variable &quot;FullName&quot; by concatenate 2 variables" DisplayName="Assign- Variable FullName" sap:VirtualizedContainerService.HintSize="334,107.333333333333" sap2010:WorkflowViewState.IdRef="Assign_3">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[FullName]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[FirstName + " "+LastName]</InArgument>
+        </Assign.Value>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Assign>
+      <ui:LogMessage sap2010:Annotation.AnnotationText="Returns John Smith in output" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,125.333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;FirstName + LastName is: &quot; +FullName]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:LogMessage>
+      <WriteLine sap2010:Annotation.AnnotationText="Returns John Smith in output" DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,93.3333333333333" sap2010:WorkflowViewState.IdRef="WriteLine_7" Text="[&quot;FirstName +LastName is :&quot; + FullName]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </WriteLine>
+    </Sequence>
+    <Sequence DisplayName="Seq- Check if variable contains another variable" sap:VirtualizedContainerService.HintSize="376,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_14">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage sap2010:Annotation.AnnotationText="Check if FullName contains FirstName&#xA;Returns a boonlean result&#xA;Result True" DisplayName="Log Message- " sap:VirtualizedContainerService.HintSize="334,156.666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[FullName.Contains(FirstName)]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:LogMessage>
+      <WriteLine sap2010:Annotation.AnnotationText="Check if FullName contains FirstName&#xA;Convert boolean .ToString&#xA;Returns a boonlean result&#xA;Result True" DisplayName="Write Line-" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="WriteLine_11" Text="[FullName.Contains(FirstName).ToString]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </WriteLine>
+      <ui:LogMessage sap2010:Annotation.AnnotationText="Will return boolean result.&#xA;Result show False coz John Smith is not equal to Smith" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,140" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[FullName.Equals(LastName)]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:LogMessage>
+    </Sequence>
+    <Sequence DisplayName="Seq- Return position (index) of a character in variable" sap:VirtualizedContainerService.HintSize="376,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_18">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage sap2010:Annotation.AnnotationText="Returns 7&#xA;, is in position 7&#xA;Index starts from 0" DisplayName="Log Message- Find index of , inside &quot;StreetName&quot;" sap:VirtualizedContainerService.HintSize="334,156.666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_9" Message="[StreetName.IndexOf(&quot;,&quot;)]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:LogMessage>
+      <WriteLine sap2010:Annotation.AnnotationText="Result reutrns as an integer so must covert .ToString&#xA;Returns 7&#xA;, is in position 7&#xA;Index starts from 0&#xA;" DisplayName="Write Line- Find index of , inside &quot;StreetName&quot;" sap:VirtualizedContainerService.HintSize="334,174.666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_12" Text="[StreetName.IndexOf(&quot;,&quot;).ToString]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </WriteLine>
+    </Sequence>
+    <Sequence sap2010:Annotation.AnnotationText="Using range idex to extract character from variable" DisplayName="Seq- Extract character using index" sap:VirtualizedContainerService.HintSize="376,114.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_19">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage sap2010:Annotation.AnnotationText="Returns 7&#xA;, is in position 7&#xA;Index starts from 0" DisplayName="Log Message- Find index of , inside &quot;StreetName&quot;" sap:VirtualizedContainerService.HintSize="334,156.666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_10" Message="[StreetName.IndexOf(&quot;,&quot;)]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:LogMessage>
+      <ui:LogMessage sap2010:Annotation.AnnotationText="Using &quot;Substring&quot;&#xA;Extract character before , in variable &quot;StreetName&quot;&#xA;, is in index 7&#xA;(0,7) is from index 0 to 7 BUT not including 7&#xA;Return result Hougang" DisplayName="Seq- SubString" sap:VirtualizedContainerService.HintSize="334,190" sap2010:WorkflowViewState.IdRef="LogMessage_11" Message="[StreetName.Substring(0,7)]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:LogMessage>
+    </Sequence>
+    <Sequence DisplayName="Seq- SubString to extract" sap:VirtualizedContainerService.HintSize="376,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_20">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <WriteLine sap2010:Annotation.AnnotationText="Using &quot;Substring&quot;&#xA;Extract character before , in variable &quot;StreetName&quot;&#xA;, is in index 7&#xA;(0,7) is from index 0 to 7 BUT not including 7&#xA;Return result Hougang" DisplayName="Write Line- Substring" sap:VirtualizedContainerService.HintSize="334,191.333333333333" sap2010:WorkflowViewState.IdRef="WriteLine_13" Text="[StreetName.Substring(0,7)]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </WriteLine>
+      <ui:LogMessage sap2010:Annotation.AnnotationText="Extract character before , without knowing which position , is at" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,140" sap2010:WorkflowViewState.IdRef="LogMessage_12" Message="[StreetName.Substring(0,StreetName.IndexOf(&quot;,&quot;))]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:LogMessage>
+      <WriteLine sap2010:Annotation.AnnotationText="Extract character before , without knowing which position , is at" DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,108" sap2010:WorkflowViewState.IdRef="WriteLine_14" Text="[StreetName.Substring(0,StreetName.IndexOf(&quot;,&quot;))]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </WriteLine>
+    </Sequence>
+    <Sequence DisplayName="Seq- Concatenate And Sum" sap:VirtualizedContainerService.HintSize="376,350" sap2010:WorkflowViewState.IdRef="Sequence_21">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap2010:Annotation.AnnotationText="create variable for BillOne and BillTwo" DisplayName="- Concatenate" sap:VirtualizedContainerService.HintSize="334,92.6666666666667" sap2010:WorkflowViewState.IdRef="Assign_4">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[ConcatenateOfBill]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[BillOne + BillTwo]</InArgument>
+        </Assign.Value>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Assign>
+      <ui:LogMessage sap2010:Annotation.AnnotationText="Return 2080 concatenation instead of sum" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,125.333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_13" Message="[ConcatenateOfBill]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:LogMessage>
+    </Sequence>
+    <WriteLine sap2010:Annotation.AnnotationText="Return 2080 concatenation instead of sum" DisplayName="Write Line- Concatenate" sap:VirtualizedContainerService.HintSize="376,108" sap2010:WorkflowViewState.IdRef="WriteLine_15" Text="[ConcatenateOfBill]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <Assign sap2010:Annotation.AnnotationText="Convert string variable to integer to do maths equations then back .ToString coz varaible is a string type" DisplayName="Assign- Maths sum" sap:VirtualizedContainerService.HintSize="376,124" sap2010:WorkflowViewState.IdRef="Assign_5">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[SumOfBill]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[(Cint(BillOne)+Cint(BillTwo)).ToString]</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <ui:LogMessage sap2010:Annotation.AnnotationText="variable already converted to string, so dont need to convert again.&#xA;Return the sum of two variables&#xA;Result shows 100" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="376,173.333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_14" Message="[SumOfBill]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+    <WriteLine sap2010:Annotation.AnnotationText="variable already converted to string, so dont need to convert again.&#xA;Return the sum of two variables&#xA;Result shows 100" DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="376,158" sap2010:WorkflowViewState.IdRef="WriteLine_16" Text="[SumOfBill]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+  </Sequence>
+</Activity>
